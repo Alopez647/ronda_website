@@ -41,6 +41,14 @@
             justify-content: end;
         }
         
+        .Title {
+            display: flex;
+            font-size: 1.75rem;
+            width: 17rem;
+            position: absolute;
+            left: 2rem;
+            word-spacing: 1.25rem;
+        }
         .navButton {
             background: #D0BC78;
             color: #4B4B4B;
@@ -48,7 +56,7 @@
             font-size: 1.25rem;
             margin: 2rem 2rem;
             border-radius: 10px;
-            height: 3.5rem;
+            height: 3.25rem;
             width: 10rem;
             border: none;
             transition: .2s;
@@ -65,7 +73,7 @@
             width: 100%;
         }
         .body1 {
-            background: blue;
+            background: #D0BC78;;
             width: 100%;
             position: absolute;
             top: 6rem;
@@ -81,14 +89,58 @@
         .circleOne {
             position: absolute;
             top: 0%;
-            left: 45%;
+            left: 42.5%;
             z-index: 1
         }
         .circleTwo {
             position: absolute;
             top: 37rem;
-            left: 45%;
+            left: 42.5%;
             z-index: 1;
+        }
+        .heading {
+            /* z-index: 1; */
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            background: rgb(171, 171, 171);
+            height: 27.5rem;
+            width:65rem;
+        }
+        .image {
+            float: left;
+            z-index: 1;
+            background: grey;
+            position: relative;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            margin-left: 2rem;
+            height: 23rem;
+            width: 40rem;
+            border-radius: 5px;
+            border:2.5px solid grey;
+        }
+        .textHead {
+            z-index: 1;
+            float: right;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            margin-right: 1.5rem;
+            margin-top: 1rem;
+            height: 20rem;
+            width: 20rem;
+        }
+        .headButton {
+            border: none;
+            position: absolute;
+            right: 12.5%;
+            bottom: 8%;
+            height: 2rem;
+            width: 7rem;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -97,24 +149,33 @@
         <circle r="850" cx="-250" cy="-100" fill="black" stroke="#D0BC78" stroke-width="7.5px"/>
     </svg>
     <div class="nav">
+        <p class="Title">Agape Primary Care</p>
+
         <button class="navButton">Home</button>
         <button class="navButton">Providers</button>
         <button class="navButton">Appointment</button>
         <button class="navButton">Contact Us</button>
     </div>
 
+    <div class="heading">
+        <div class="image">
+            wow
+        </div>
+        <div class="textHead">Wow such wow </div>
+        <button class="headButton">Click Me</button>
+    </div>
 
     <div class="bodies">
         <svg class="bdCircle circleOne" height="225" width="225">
-            <circle r="100" cx="110" cy="100" fill="blue" stroke="white" stroke-width="7.5px"/>
+            <circle r="100" cx="110" cy="100" fill="#D0BC78" stroke="white" stroke-width="7.5px"/>
             <text x="50%" y="47.5%" text-anchor="middle" fill="white">Look, I’m centered!</text>
         </svg>
         <div class="body1">
-            
+            <div class=""
         </div>
 
         <svg class="bdCircle circleTwo" height="225" width="225">
-            <circle r="100" cx="110" cy="100" fill="green" stroke="blue" stroke-width="7.5px"/>
+            <circle r="100" cx="110" cy="100" fill="green" stroke="#D0BC78" stroke-width="7.5px"/>
             <text x="50%" y="47.5%" text-anchor="middle" fill="white">Look, I’m centered!</text>
         </svg>
         <div class="body2">
