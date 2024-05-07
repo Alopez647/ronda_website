@@ -33,7 +33,7 @@
         .nav {
             background: #D0BC78;
             height: 4vw;
-            width: 100vw;
+            width: 100%;
             position: absolute;
             z-index: 1;
             display: flex; 
@@ -43,21 +43,21 @@
         
         .Title {
             display: flex;
-            font-size: 1.75rem;
-            width: 17rem;
+            font-size: 2vw;
+            width: 20rem;
             position: absolute;
-            left: 2rem;
-            word-spacing: 1.25rem;
+            left: 2vw;
+            word-spacing: 1.25vw;
         }
         .navButton {
             background: #D0BC78;
             color: #4B4B4B;
             font-family: "Inria Serif", serif;
-            font-size: 1.25rem;
-            margin: 2rem 2rem;
+            font-size: 1.5vw;
+            margin: 2vw 2vw;
             border-radius: 10px;
-            height: 3.25rem;
-            width: 10rem;
+            height: 3.5vw;
+            width: 10vw;
             border: none;
             transition: .2s;
 
@@ -76,49 +76,52 @@
             background: #D0BC78;;
             width: 100%;
             position: absolute;
-            top: 6rem;
+            top: 6em;
             height: 85vh;
         }
         .body2 {
-            background: green;
+            background: #4B4B4B;
             width: 100%;
             position: absolute;
-            top: 43rem;
-            height: 85vh;
+            top: 43em;
+            height: 200vh;
         }
         .circleOne {
             position: absolute;
             top: 0%;
-            left: 42.5%;
+            left: 43%;
             z-index: 1
         }
         .circleTwo {
             position: absolute;
             top: 37rem;
-            left: 42.5%;
+            left: 43%;
             z-index: 1;
         }
         .heading {
             /* z-index: 1; */
             position: absolute;
-            top: 20%;
-            left: 20%;
+            top: 25%;
+            left: 15%;
             background: rgb(171, 171, 171);
-            height: 27.5rem;
-            width:65rem;
+            height: 27.5vw;
+            width:75vw;
         }
         .image {
             float: left;
             z-index: 1;
             background: grey;
             position: relative;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-            margin-left: 2rem;
-            height: 23rem;
-            width: 40rem;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            margin-left: 3%;
+            height: 23vw;
+            width: 40vw;
             border-radius: 5px;
             border:2.5px solid grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .textHead {
             z-index: 1;
@@ -128,25 +131,89 @@
             align-items: center;
             justify-content: center;
             background: white;
-            margin-right: 1.5rem;
-            margin-top: 1rem;
-            height: 20rem;
-            width: 20rem;
+            margin-right: 2%;
+            margin-top: 2%;
+            height: 10vw;
+            width: 30vw;
         }
         .headButton {
+            font-family: "Inria Serif", serif;
+            font-size: 1.1rem;
             border: none;
             position: absolute;
-            right: 12.5%;
-            bottom: 8%;
-            height: 2rem;
-            width: 7rem;
+            right: 34%;
+            bottom: 45%;
+            height: 3vw;
+            width: 6vw;
             border-radius: 5px;
+            background: black;
+            color: white;
+            border: 1px solid grey;
+        }
+        .Two {
+            background: white;
+            color: grey;
+            right: 24%;
+        }
+        .form {
+            position: absolute;
+            background: grey;
+            height: 55vw;
+            width: 60vw;
+            left: 20%;
+            top: 40%;
+        }
+        .formHead {
+            background: #D0BC78;
+            position: absolute;
+            top: 5%;
+            left: 20vw;
+            height: 4vw;
+            width: 20vw;
+            filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .5));
+            z-index: 1;
+            border-radius: 5px;
+            color: #4B4B4B;
+            text-align: center;
+            line-height: 4vw;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .formBody {
+            background: #D0BC78;
+            position: absolute;
+            left: 2.5vw;
+            top: 10%;
+            height: 45vw;
+            width: 55vw;
+            border-radius: 5px;
+            filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .25));
+
+        }
+        input {
+            background: white;
+            position: relative;
+            margin-top: 2vw;
+            margin-left: 2vw;
+            width: 49vw;
+            border: none;
+            font-family: "Inria Serif", serif;
+            padding: 1.15em;
+            color: #4B4B4B;
+        }
+        input:focus {
+            outline: none
+        }
+        .message {
+            height: 7.5vw;
+            line-height: 10%;
+            padding: none
         }
     </style>
 </head>
 <body>
     <svg class="circleBK" height="1000" width="1000">
-        <circle r="850" cx="-250" cy="-100" fill="black" stroke="#D0BC78" stroke-width="7.5px"/>
+        <circle r="850" cx="-250" cy="-200" fill="black" stroke="#D0BC78" stroke-width="7.5px"/>
     </svg>
     <div class="nav">
         <p class="Title">Agape Primary Care</p>
@@ -159,27 +226,42 @@
 
     <div class="heading">
         <div class="image">
-            wow
+            Image Goes Here
         </div>
         <div class="textHead">Wow such wow </div>
-        <button class="headButton">Click Me</button>
+        <button class="headButton">VISIT US</button>
+        <button class="headButton Two">Explore</button>
     </div>
 
     <div class="bodies">
         <svg class="bdCircle circleOne" height="225" width="225">
             <circle r="100" cx="110" cy="100" fill="#D0BC78" stroke="white" stroke-width="7.5px"/>
-            <text x="50%" y="47.5%" text-anchor="middle" fill="white">Look, I’m centered!</text>
+            <text x="50%" y="50%" text-anchor="middle" fill="#4B4B4B" font-size="2em">ABOUT US</text>
         </svg>
         <div class="body1">
-            <div class=""
+            <div class="">
+                
+            </div>
         </div>
 
         <svg class="bdCircle circleTwo" height="225" width="225">
-            <circle r="100" cx="110" cy="100" fill="green" stroke="#D0BC78" stroke-width="7.5px"/>
-            <text x="50%" y="47.5%" text-anchor="middle" fill="white">Look, I’m centered!</text>
+            <circle r="100" cx="110" cy="100" fill="#4B4B4B" stroke="#D0BC78" stroke-width="7.5px"/>
+            <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="2em">SERVICES</text>
         </svg>
         <div class="body2">
-            
+            <div class=""></div>
+
+            <div class="form">
+                <div class="formHead"> DROP US A MESSAGE</div>
+                <div class="formBody">
+                    <input type="text" placeholder="Name (First, Last)*">
+                    <input type="text" placeholder="Email*">
+                    <input type="text" placeholder="Phone Number*">
+                    <input type="text" placeholder="Best Time to Contact*">
+                    <input class="message" type="text" placeholder="Leave a Message">
+                </div>
+
+            </div>
         </div>
     </div>
     
