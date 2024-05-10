@@ -71,22 +71,22 @@
             /* z-index: 1; */
             position: absolute;
             top: 25%;
-            left: 15%;
-            background: rgb(171, 171, 171);
-            height: 30vw;
-            width:78vw;
+            left: 5%;
+            /* background: rgb(171, 171, 171); */
+            height: 32.5vw;
+            width:90vw;
         }
         .image {
             float: left;
             z-index: 1;
-            background: grey;
+            background: rgb(180, 180, 180);
             position: relative;
-            margin-top: 3%;
+            margin-top: 2.5%;
             margin-bottom: 3%;
-            margin-left: 3%;
-            height: 25vw;
-            width: 40vw;
-            border-radius: 5px;
+            margin-left: 2%;
+            height: 85%;
+            width: 50%;
+            border-radius: 7.5px;
             border:2.5px solid grey;
             display: flex;
             align-items: center;
@@ -96,24 +96,33 @@
             z-index: 1;
             float: right;
             position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: white;
-            margin-right: 2%;
+            /* background: white; */
+            color: #4B4B4B;
+            margin-right: 0%;
             margin-top: 2%;
-            height: 12vw;
-            width: 32vw;
+            height: 38%;
+            width: 45%;
+        }
+        .textHead h1 {
+            color: #D0BC78;
+            -webkit-text-stroke-color: #4B4B4B;
+            -webkit-text-stroke-width: 1px;
+            font-size: 4.5em;
+            margin-top: .15em;
+            margin-bottom: .3em;
+        }
+        .textHead p {
+            font-size: 1.5em;
         }
         .headButton {
             font-family: "Inria Serif", serif;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             border: none;
             position: absolute;
-            right: 34%;
-            bottom: 42%;
+            right: 36%;
+            bottom: 45%;
             height: 3vw;
-            width: 6vw;
+            width: 9%;
             border-radius: 5px;
             background: black;
             color: white;
@@ -122,7 +131,7 @@
         .Two {
             background: white;
             color: grey;
-            right: 24%;
+            right: 25%;
         }
         .bodies {
             top: 85%;
@@ -132,13 +141,14 @@
         .circleOne {
             position: absolute;
             top: 3vh;
-            left: 44.5vw;
-            z-index: 1
+            left: 44vw;
+            z-index: 1;
+            margin: auto
         }
         .circleTwo {
             position: absolute;
             top: 161vh;
-            left: 44.5vw;
+            left: 44vw;
             z-index: 1;
         }
         .body1 {
@@ -149,11 +159,18 @@
             height: 157vh;
         }
         .body2 {
-            background: #4B4B4B;
+            background: white;
             width: 100%;
             position: absolute;
             top: 170vh;
             height: 200vh;
+        }
+        .body3 {
+            background: #4B4B4B;
+            width: 100%;
+            position: absolute;
+            top: 240vh;
+            height: 150vh;
         }
         .bodyHeading1 {
             /* background: grey; */
@@ -243,22 +260,34 @@
             
         }
         .textBlocks {
-            background: white;
+            /* background: white; */
+            /* display: flex; */
             position: relative;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
             margin: auto;
             width: 95vw;
-            height: 45vw;
+            height: 70vh;
         }
         .bodyBlock {
-            background: grey;
+            /* background: grey; */
+            text-align: left;
+            padding: 2em;
+            /* justify-content: space-evenly; */
             display: inline-block;
             margin: 2em;
-            height: 30vh;
-            width: 40vw;
+            height: 25%;
+            width: 35%;
+            color: #4B4B4B;
+            font-size: 1.5em
             
         }
-        .top {
-            margin-top: 5em;
+        .bodyBlock h2 {
+            margin-bottom: .75em;
+        }
+        .bodyBlock2 {
+            text-align: right;
         }
         .form {
             position: absolute;
@@ -266,12 +295,12 @@
             height: 55vw;
             width: 60vw;
             left: 20%;
-            top: 40%;
+
         }
         .formHead {
             background: #D0BC78;
             position: absolute;
-            top: 5%;
+            top: 1%;
             left: 20vw;
             height: 7vh;
             width: 20vw;
@@ -287,8 +316,9 @@
         .formBody {
             background: #D0BC78;
             position: absolute;
+            text-align: center;
             left: 2.5vw;
-            top: 10%;
+            top: 5%;
             height: 45vw;
             width: 55vw;
             border-radius: 5px;
@@ -298,12 +328,12 @@
         input {
             background: white;
             position: relative;
-            margin-top: 2vw;
-            margin-left: 2vw;
-            width: 49vw;
+            margin-top: 5%;
+            width: 85%;
             border: none;
             font-family: "Inria Serif", serif;
             padding: 1.15em;
+            font-size: 1.15em;
             color: #4B4B4B;
         }
         input:focus {
@@ -348,7 +378,11 @@
         <div class="image">
             Image Goes Here
         </div>
-        <div class="textHead">Wow such wow </div>
+        <div class="textHead">
+            <p>Welcome to</p>
+            <h1>Agape Family Wellness</h1>
+            <p>Providing patient centered care by listening to you and developing the best plan to help you live your life to the fullest.</p>
+        </div>
         <button class="headButton">VISIT US</button>
         <button class="headButton Two">Explore</button>
     </div>
@@ -380,16 +414,31 @@
         </div>
 
         <svg class="bdCircle circleTwo" height="225" width="225">
-            <circle r="100" cx="110" cy="100" fill="#4B4B4B" stroke="#D0BC78" stroke-width="7.5px"/>
+            <circle r="100" cx="110" cy="105" fill="#4B4B4B" stroke="white" stroke-width="7.5px"/>
             <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="2em">SERVICES</text>
         </svg>
         <div class="body2">
             <div class="textBlocks">
-                <div class="bodyBlock top"></div>
-                <div class="bodyBlock top textBody2"></div>
-                <div class="bodyBlock textBody3"></div>
-                <div class="bodyBlock textBody4"></div>
+                <div class="bodyBlock">
+                    <h2>PREVENTATIVE HEALTHCARE</h2>
+                    <p>In our medical practice, we provide a range of preventive care services, including annual physical examinations, cancer screenings, weight loss management, dietary and physical activity recommendations. </p>
+                </div>
+                <div class="bodyBlock bodyBlock2">
+                    <h2>ACUTE SYMPTOMS</h2>
+                    <p>We provide diagnostic services for numerous acute conditions, including sinus infections, strep throat, sexually transmitted infections, influenza, the common cold, and various other illnesses.</p>
+                </div>
+                <div class="bodyBlock">
+                    <h2>CHRONIC ISSUES</h2>
+                    <p>We work collaboratively with many specialists. You can depend on us for the management of all your chronic medical conditions, including diabetes, heart disease, kidney disease and more. </p>
+                </div>
+                <div class="bodyBlock bodyBlock2">
+                    <h2>AESTHETICS</h2>
+                    <p>We help you reach your aesthetic goals by providing cosmetic injections and fillers. We listen to your wants and help you build a plan that will meet your desires.</p>
+                </div>
             </div>
+        </div>
+
+        <div class="body3">
 
             <div class="form">
                 <div class="formHead"> DROP US A MESSAGE</div>
@@ -401,7 +450,7 @@
                     <input class="message" type="text" placeholder="Leave a Message">
                     <button class="sendButton">Send</button>
                 </div>
-
+                
             </div>
         </div>
     </div>
