@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agape Primary Care</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        /* @media screen and (min-width: 320px) and ( max-width:767px) {
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* @media screen and (min-width: 320px) and ( max-width:767px) {
             .nav {
                 width:
                 
@@ -26,438 +26,515 @@
             }
         }
         */
-        .circleBK {
-            position: absolute;
-            
-        }
-        .nav {
-            background: #D0BC78;
-            height: 4vw;
-            width: 100%;
-            position: absolute;
-            z-index: 1;
-            display: flex; 
-            align-items: center;
-            justify-content: end;
-        }
-        
-        .Title {
-            display: flex;
-            font-size: 2vw;
-            width: 25rem;
-            position: absolute;
-            left: 2vw;
-            word-spacing: 1.25vw;
-        }
-        .navButton {
-            background: #D0BC78;
-            color: #4B4B4B;
-            font-family: "Inria Serif", serif;
-            font-size: 1.5vw;
-            margin: 2vw 2vw;
-            border-radius: 10px;
-            height: 3.5vw;
-            width: 10vw;
-            border: none;
-            transition: .2s;
+      .circleBK {
+        position: absolute;
+      }
+      .nav {
+        background: #d0bc78;
+        height: 4vw;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+      }
 
-        }
-        .navButton:hover {
-            background:rgb(0, 0, 0) ;
-            color:rgb(255, 255, 255) ;
-            
-        }
-        .heading {
-            /* z-index: 1; */
-            position: absolute;
-            top: 25%;
-            left: 5%;
-            /* background: rgb(171, 171, 171); */
-            height: 32.5vw;
-            width:90vw;
-        }
-        .image {
-            float: left;
-            z-index: 1;
-            background: rgb(180, 180, 180);
-            position: relative;
-            margin-top: 2.5%;
-            margin-bottom: 3%;
-            margin-left: 2%;
-            height: 85%;
-            width: 50%;
-            border-radius: 7.5px;
-            border:2.5px solid grey;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .textHead {
-            z-index: 1;
-            float: right;
-            position: relative;
-            /* background: white; */
-            color: #4B4B4B;
-            margin-right: 0%;
-            margin-top: 2%;
-            height: 38%;
-            width: 45%;
-        }
-        .textHead h1 {
-            color: #D0BC78;
-            -webkit-text-stroke-color: #4B4B4B;
-            -webkit-text-stroke-width: 1px;
-            font-size: 4.5em;
-            margin-top: .15em;
-            margin-bottom: .3em;
-        }
-        .textHead p {
-            font-size: 1.5em;
-        }
-        .headButton {
-            font-family: "Inria Serif", serif;
-            font-size: 1.2rem;
-            border: none;
-            position: absolute;
-            right: 36%;
-            top: 45%;
-            height: 3vw;
-            width: 9%;
-            border-radius: 5px;
-            background: black;
-            color: white;
-            border: 1px solid grey;
-        }
-        .Two {
-            background: white;
-            color: grey;
-            right: 25%;
-        }
-        .bodies {
-            top: 85%;
-            position: absolute;
-            width: 100%;
-        }
-        .circleOne {
-            position: absolute;
-            top: 3vh;
-            left: 44vw;
-            z-index: 1;
-            margin: auto
-        }
-        .circleTwo {
-            position: absolute;
-            top: 161vh;
-            left: 44vw;
-            z-index: 1;
-        }
-        .body1 {
-            background: #D0BC78;;
-            width: 100%;
-            position: absolute;
-            top: 13vh;
-            height: 157vh;
-        }
-        .body2 {
-            background: white;
-            width: 100%;
-            position: absolute;
-            top: 170vh;
-            height: 200vh;
-        }
-        .body3 {
-            background: #4B4B4B;
-            width: 100%;
-            position: absolute;
-            top: 245vh;
-            height: 150vh;
-        }
-        .bodyHeading1 {
-            /* background: grey; */
-            width: 75vw;
-            height: 5vw;
-            position: relative;
-            margin: auto;
-            margin-top: 8vw;
-            text-align: center;
-            font-family: "Inria Serif", serif;
-            color: #4B4B4B;
-        }
-        .bodyHeading1 h1{
-            font-size: 4vw;
-        }
-        .bodyHeading2 {
-            /* background: grey; */
-            width: 75vw;
-            height: 7vw;
-            position: relative;
-            margin: auto;
-            margin-top: 2vw;
-            text-align: center;
-            font-family: "Inria Serif", serif;
-            font-size: 1.25em;
-            color: #4b4b4b; 
-              
-        }
-        .bodyHeading2 p {
-            margin-top: 1vw;    
-        }
-        .imageBlock {
-            background: grey;
-            position: absolute;
-            right: 5%;
-            Top: 55vh;
-            height: 39vh;
-            width: 39vw;
-            border-radius: 7.5px;
-            /* border: 5px solid white; */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            
-        }
-        .BlockTwo {
-            Top: 68%;
-            position: absolute;
-        }
-        .textBlock1 {
-            /* background: grey; */
-            font-size: 1.3em;
-            color: #4b4b4b;
-            position: absolute;
-            width: 40vw;
-            height: 15vw;
-            left: 5%;
-            top: 52vh;
-            padding: 1.15em;
-            
-        }
-        .textBlock1 p {
-            position: absolute;
-            top: 25%;
-            font-size: 1.2em;
-            line-height: 1.5em;
-            
-        }
-        .textBlock2 {
-            /* background: grey; */
-            font-size: 1.3em;
-            color: #4b4b4b;
-            position: absolute;
-            width: 40vw;
-            height: 15vw;
-            left: 5%;
-            top: 104vh;
-            padding: 1.15em;
-            
-        }
-        .textBlock2 p {
-            position: absolute;
-            top: 25%;
-            font-size: 1.2em;
-            line-height: 1.5em;
-            
-        }
-        .textBlocks {
-            /* background: white; */
-            /* display: flex; */
-            position: relative;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            margin: auto;
-            width: 95vw;
-            height: 70vh;
-        }
-        .bodyBlock {
-            /* background: grey; */
-            text-align: left;
-            padding: 2em;
-            /* justify-content: space-evenly; */
-            display: inline-block;
-            margin: 2em;
-            height: 25%;
-            width: 35%;
-            color: #4B4B4B;
-            font-size: 1.5em
-            
-        }
-        .bodyBlock h2 {
-            margin-bottom: .75em;
-        }
-        .bodyBlock2 {
-            text-align: right;
-        }
-        .form {
-            position: absolute;
-            /* background: grey; */
-            height: 55vw;
-            width: 60vw;
-            left: 20%;
-
-        }
-        .formHead {
-            background: #D0BC78;
-            position: absolute;
-            top: 1%;
-            left: 20vw;
-            height: 7vh;
-            width: 20vw;
-            filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .5));
-            z-index: 1;
-            border-radius: 5px;
-            color: #4B4B4B;
-            text-align: center;
-            line-height: 4vw;
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-        .formBody {
-            background: #D0BC78;
-            position: absolute;
-            text-align: center;
-            left: 2.5vw;
-            top: 5%;
-            height: 50vw;
-            width: 55vw;
-            border-radius: 5px;
-            filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .25));
-
-        }
-        input {
-            background: white;
-            position: relative;
-            margin-top: 5%;
-            width: 85%;
-            border: none;
-            font-family: "Inria Serif", serif;
-            padding: 1.15em;
-            font-size: 1.15em;
-            color: #4B4B4B;
-        }
-        input:focus {
-            outline: none
-        }
-        .message {
-            height: 10vw;
-            line-height: 10%;
-            padding: none;
-            text-align: top;
-        }
-        .sendButton {
-            background: #D18C3E;
-            border: none;
-            filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .5));
-            color: white;
-            position: absolute;
-            border-radius: 5px;
-            height: 4vw;
-            width: 20vw;
-            bottom: 7.5%;
-            left: 32.5%;
-            font-family: "Inria Serif", serif;
-            font-size: 2vw;
-        }
+      .Title {
+        display: flex;
+        font-size: 2vw;
+        width: 25rem;
+        position: absolute;
+        left: 2vw;
+        word-spacing: 1.25vw;
+      }
+      .navButton {
+        background: #d0bc78;
+        color: #4b4b4b;
+        font-family: "Inria Serif", serif;
+        font-size: 1.5vw;
+        margin: 2vw 2vw;
+        border-radius: 10px;
+        height: 3.5vw;
+        width: 10vw;
+        border: none;
+        transition: 0.2s;
+      }
+      .navButton:hover {
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+      }
+      .heading {
+        /* z-index: 1; */
+        position: absolute;
+        top: 22.5%;
+        left: 5%;
+        /* background: rgb(171, 171, 171); */
+        height: 32.5vw;
+        width: 90vw;
+      }
+      .image {
+        float: left;
+        z-index: 1;
+        background-image: url(./photos/group\ sitting-1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        margin-top: 2.5%;
+        margin-bottom: 3%;
+        margin-left: 2%;
+        height: 85%;
+        width: 50%;
+        border-radius: 7.5px;
+        border: 2.5px solid grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .textHead {
+        z-index: 1;
+        float: right;
+        position: relative;
+        /* background: white; */
+        color: #4b4b4b;
+        margin-right: 0%;
+        margin-top: 2%;
+        height: 38%;
+        width: 46%;
+      }
+      .textHead h1 {
+        color: #d0bc78;
+        -webkit-text-stroke-color: #4b4b4b;
+        -webkit-text-stroke-width: 1px;
+        font-size: 3.75em;
+        margin-top: 0.15em;
+        margin-bottom: 0.3em;
+      }
+      .textHead p {
+        font-size: 1.5em;
+      }
+      .headButton {
+        font-family: "Inria Serif", serif;
+        font-size: 1.2rem;
+        border: none;
+        position: absolute;
+        right: 37%;
+        top: 45%;
+        height: 3.5vw;
+        width: 9%;
+        border-radius: 5px;
+        background: black;
+        color: white;
+        border: 1px solid grey;
+      }
+      .Two {
+        background: white;
+        color: #486284;
+        right: 26%;
+        border: 1px solid #486284;
+      }
+      .headerContact {
+        /* background: blue; */
+        color: #1a202c;
+        font-family: "Inria Serif", serif;
+        height: 35%;
+        width: 20%;
+        position: absolute;
+        right: 17.5%;
+        bottom: 5%;
+      }
+      .headerContact h3 {
+        font-size: 1.5em;
+        margin-bottom: 0.25em;
+      }
+      .headerContact p {
+        margin-bottom: 0.25em;
+      }
+      .headerIcons {
+        background: blue;
+        height: 35%;
+        width: 7.5%;
+        position: absolute;
+        right: 38.5%;
+        bottom: 5%;
+      }
+      .bodies {
+        top: 85%;
+        position: absolute;
+        width: 100%;
+      }
+      .circleOne {
+        position: absolute;
+        top: 3vh;
+        left: 42.5vw;
+        z-index: 1;
+        margin: auto;
+      }
+      .circleTwo {
+        position: absolute;
+        top: 159vh;
+        left: 42.5vw;
+        z-index: 1;
+      }
+      .body1 {
+        background: #d0bc78;
+        width: 100%;
+        position: absolute;
+        top: 16vh;
+        height: 157vh;
+      }
+      .body2 {
+        background: white;
+        width: 100%;
+        position: absolute;
+        top: 174vh;
+        height: 200vh;
+      }
+      .body3 {
+        background: #4b4b4b;
+        width: 100%;
+        position: absolute;
+        top: 250vh;
+        height: 150vh;
+      }
+      .bodyHeading1 {
+        /* background: grey; */
+        width: 75vw;
+        height: 5vw;
+        position: relative;
+        margin: auto;
+        margin-top: 8vw;
+        text-align: center;
+        font-family: "Inria Serif", serif;
+        color: #4b4b4b;
+      }
+      .bodyHeading1 h1 {
+        font-size: 4vw;
+      }
+      .bodyHeading2 {
+        /* background: grey; */
+        width: 75vw;
+        height: 7vw;
+        position: relative;
+        margin: auto;
+        margin-top: 2vw;
+        text-align: center;
+        font-family: "Inria Serif", serif;
+        font-size: 1.25em;
+        color: #4b4b4b;
+      }
+      .bodyHeading2 p {
+        margin-top: 1vw;
+      }
+      .imageBlock {
+        background: grey;
+        position: absolute;
+        right: 5%;
+        top: 55vh;
+        height: 43vh;
+        width: 39vw;
+        border-radius: 7.5px;
+        /* border: 5px solid white; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+      .BlockTwo {
+        top: 68%;
+        position: absolute;
+      }
+      .textBlock1 {
+        /* background: grey; */
+        font-size: 1.3em;
+        color: #4b4b4b;
+        position: absolute;
+        width: 40vw;
+        height: 15vw;
+        left: 5%;
+        top: 52vh;
+        padding: 1.15em;
+      }
+      .textBlock1 p {
+        position: absolute;
+        top: 25%;
+        font-size: 1.2em;
+        line-height: 1.5em;
+      }
+      .textBlock2 {
+        /* background: grey; */
+        font-size: 1.3em;
+        color: #4b4b4b;
+        position: absolute;
+        width: 40vw;
+        height: 15vw;
+        left: 5%;
+        top: 104vh;
+        padding: 1.15em;
+      }
+      .textBlock2 p {
+        position: absolute;
+        top: 25%;
+        font-size: 1.2em;
+        line-height: 1.5em;
+      }
+      .textBlocks {
+        /* background: red; */
+        /* display: flex; */
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        width: 95vw;
+        height: 75vh;
+      }
+      .bodyBlock {
+        /* background: grey; */
+        text-align: left;
+        padding: 2em;
+        /* justify-content: space-evenly; */
+        display: inline-block;
+        margin: 1.5em;
+        height: 25%;
+        width: 35%;
+        color: #4b4b4b;
+        font-size: 1.25em;
+      }
+      .bodyBlock h2 {
+        margin-bottom: 0.75em;
+      }
+      .bodyBlock2 {
+        text-align: right;
+      }
+      .form {
+        position: absolute;
+        /* background: grey; */
+        height: 55vw;
+        width: 60vw;
+        left: 20%;
+      }
+      .formHead {
+        background: #d0bc78;
+        position: absolute;
+        top: 1%;
+        left: 20vw;
+        height: 8vh;
+        width: 20vw;
+        filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
+        z-index: 1;
+        border-radius: 5px;
+        color: #4b4b4b;
+        text-align: center;
+        line-height: 4vw;
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+      .formBody {
+        background: #d0bc78;
+        position: absolute;
+        text-align: center;
+        left: 2.5vw;
+        top: 5%;
+        height: 55vw;
+        width: 55vw;
+        border-radius: 5px;
+        filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.25));
+      }
+      input {
+        background: white;
+        position: relative;
+        margin-top: 5%;
+        width: 85%;
+        border: none;
+        font-family: "Inria Serif", serif;
+        padding: 1.15em;
+        font-size: 1.15em;
+        color: #4b4b4b;
+      }
+      input:focus {
+        outline: none;
+      }
+      .message {
+        height: 10vw;
+      }
+      .sendButton {
+        background: #d18c3e;
+        border: none;
+        filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
+        color: white;
+        position: absolute;
+        border-radius: 5px;
+        height: 4vw;
+        width: 20vw;
+        bottom: 7.5%;
+        left: 32.5%;
+        font-family: "Inria Serif", serif;
+        font-size: 2vw;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <svg class="circleBK" height="1000" width="1000">
-        <circle r="850" cx="-250" cy="-200" fill="black" stroke="#D0BC78" stroke-width="7.5px"/>
+      <circle
+        r="850"
+        cx="-250"
+        cy="-200"
+        fill="black"
+        stroke="#D0BC78"
+        stroke-width="7.5px"
+      />
     </svg>
     <div class="nav">
-        <p class="Title">Agape Primary Care</p>
+      <p class="Title">Agape Family Wellness</p>
 
-        <button class="navButton">Home</button>
-        <button class="navButton">Providers</button>
-        <button class="navButton">Appointment</button>
-        <button class="navButton">Contact Us</button>
+      <button class="navButton">Home</button>
+      <button class="navButton">Providers</button>
+      <button class="navButton">Appointment</button>
+      <button class="navButton">Contact Us</button>
     </div>
 
     <div class="heading">
-        <div class="image">
-            Image Goes Here
-        </div>
-        <div class="textHead">
-            <p>Welcome to</p>
-            <h1>Agape Family Wellness</h1>
-            <p>Providing patient centered care by listening to you and developing the best plan to help you live your life to the fullest.</p>
-        </div>
-        <button class="headButton">VISIT US</button>
-        <button class="headButton Two">Explore</button>
+      <div class="image">Image Goes Here</div>
+      <div class="textHead">
+        <p>Welcome to</p>
+        <h1>Agape Family Wellness</h1>
+        <p>
+          Providing patient centered care by listening to you and developing the
+          best plan to help you live your life to the fullest.
+        </p>
+      </div>
+      <button class="headButton">VISIT US</button>
+      <button class="headButton Two">Explore</button>
+      <div class="headerContact">
+        <h3>Appointment</h3>
+        <p>(602) 880-3132</p>
+        <h3>Location</h3>
+        <p>640 W Maryland Ave Suite 4 Phoenix, AZ 85013</p>
+      </div>
+      <div class="headerIcons"></div>
     </div>
 
     <div class="bodies">
-        <svg class="bdCircle circleOne" height="225" width="225">
-            <circle r="100" cx="110" cy="100" fill="#D0BC78" stroke="white" stroke-width="7.5px"/>
-            <text x="50%" y="50%" text-anchor="middle" fill="#4B4B4B" font-size="2em">ABOUT US</text>
-        </svg>
-        <div class="body1">
-             
-            <div class="bodyHeading1">
-                <h1>Trust, Compassion and Prevention</h1>
-            </div>
-            <div class="bodyHeading2">
-                <h2>We believe that people know themselves best.</h2>
-                <p>We are dedicated to providing holistic care by listening to you and addressing your concerns. Our goal is to provide an overall improvement in your health and provide you with high quality healthcare that prioritizes prevention.</p>
-            </div>
-            <div class="textBlock1">
-                <h2>SKILLED HEALTHCARE EXPERTS</h2>
-                <p>At Agape Family Wellness, we offer a broad array of services geared towards addressing common non-emergency illnesses and injuries. We steer clear of employing a one-size-fits-all approach to diagnose and treat your condition. Instead, we provide personalized care that is customized to your unique circumstances.</p>
-            </div>
-            <div class="textBlock2">
-                <h2>AN INDIVIDUALIZED METHOD</h2>
-                <p>We are committed to enhancing and maintaining your overall health while empowering you with autonomy and a better understanding of your medical conditions. </p>
-            </div>
-            <div class="imageBlock">Image Goes Here</div>
-            <div class="imageBlock BlockTwo">Image Goes Here</div> 
+      <svg class="bdCircle circleOne" height="225" width="225">
+        <circle
+          r="100"
+          cx="110"
+          cy="100"
+          fill="#D0BC78"
+          stroke="white"
+          stroke-width="7.5px"
+        />
+        <text
+          x="50%"
+          y="50%"
+          text-anchor="middle"
+          fill="#4B4B4B"
+          font-size="2em"
+        >
+          ABOUT US
+        </text>
+      </svg>
+      <div class="body1">
+        <div class="bodyHeading1">
+          <h1>Trust, Compassion and Prevention</h1>
         </div>
-
-        <svg class="bdCircle circleTwo" height="225" width="225">
-            <circle r="100" cx="110" cy="105" fill="#4B4B4B" stroke="white" stroke-width="7.5px"/>
-            <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="2em">SERVICES</text>
-        </svg>
-        <div class="body2">
-            <div class="textBlocks">
-                <div class="bodyBlock">
-                    <h2>PREVENTATIVE HEALTHCARE</h2>
-                    <p>In our medical practice, we provide a range of preventive care services, including annual physical examinations, cancer screenings, weight loss management, dietary and physical activity recommendations. </p>
-                </div>
-                <div class="bodyBlock bodyBlock2">
-                    <h2>ACUTE SYMPTOMS</h2>
-                    <p>We provide diagnostic services for numerous acute conditions, including sinus infections, strep throat, sexually transmitted infections, influenza, the common cold, and various other illnesses.</p>
-                </div>
-                <div class="bodyBlock">
-                    <h2>CHRONIC ISSUES</h2>
-                    <p>We work collaboratively with many specialists. You can depend on us for the management of all your chronic medical conditions, including diabetes, heart disease, kidney disease and more. </p>
-                </div>
-                <div class="bodyBlock bodyBlock2">
-                    <h2>AESTHETICS</h2>
-                    <p>We help you reach your aesthetic goals by providing cosmetic injections and fillers. We listen to your wants and help you build a plan that will meet your desires.</p>
-                </div>
-            </div>
+        <div class="bodyHeading2">
+          <h2>We believe that people know themselves best.</h2>
+          <p>
+            We are dedicated to providing holistic care by listening to you and
+            addressing your concerns. Our goal is to provide an overall
+            improvement in your health and provide you with high quality
+            healthcare that prioritizes prevention.
+          </p>
         </div>
-
-        <div class="body3">
-
-            <div class="form">
-                <div class="formHead"> DROP US A MESSAGE</div>
-                <div class="formBody">
-                    <input type="text" placeholder="Name (First, Last)*">
-                    <input type="text" placeholder="Email*">
-                    <input type="text" placeholder="Phone Number*">
-                    <input type="text" placeholder="Best Time to Contact*">
-                    <input class="message" type="text" placeholder="Leave a Message">
-                    <button class="sendButton">Send</button>
-                </div>
-                
-            </div>
+        <div class="textBlock1">
+          <h2>SKILLED HEALTHCARE EXPERTS</h2>
+          <p>
+            At Agape Family Wellness, we offer a broad array of services geared
+            towards addressing common non-emergency illnesses and injuries. We
+            steer clear of employing a one-size-fits-all approach to diagnose
+            and treat your condition. Instead, we provide personalized care that
+            is customized to your unique circumstances.
+          </p>
         </div>
+        <div class="textBlock2">
+          <h2>AN INDIVIDUALIZED METHOD</h2>
+          <p>
+            We are committed to enhancing and maintaining your overall health
+            while empowering you with autonomy and a better understanding of
+            your medical conditions.
+          </p>
+        </div>
+        <div class="imageBlock">Image Goes Here</div>
+        <div class="imageBlock BlockTwo">Image Goes Here</div>
+      </div>
+
+      <svg class="bdCircle circleTwo" height="225" width="225">
+        <circle
+          r="100"
+          cx="110"
+          cy="105"
+          fill="#4B4B4B"
+          stroke="white"
+          stroke-width="7.5px"
+        />
+        <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="2em">
+          SERVICES
+        </text>
+      </svg>
+      <div class="body2">
+        <div class="textBlocks">
+          <div class="bodyBlock">
+            <h2>PREVENTATIVE HEALTHCARE</h2>
+            <p>
+              In our medical practice, we provide a range of preventive care
+              services, including annual physical examinations, cancer
+              screenings, weight loss management, dietary and physical activity
+              recommendations.
+            </p>
+          </div>
+          <div class="bodyBlock bodyBlock2">
+            <h2>ACUTE SYMPTOMS</h2>
+            <p>
+              We provide diagnostic services for numerous acute conditions,
+              including sinus infections, strep throat, sexually transmitted
+              infections, influenza, the common cold, and various other
+              illnesses.
+            </p>
+          </div>
+          <div class="bodyBlock">
+            <h2>CHRONIC ISSUES</h2>
+            <p>
+              We work collaboratively with many specialists. You can depend on
+              us for the management of all your chronic medical conditions,
+              including diabetes, heart disease, kidney disease and more.
+            </p>
+          </div>
+          <div class="bodyBlock bodyBlock2">
+            <h2>AESTHETICS</h2>
+            <p>
+              We help you reach your aesthetic goals by providing cosmetic
+              injections and fillers. We listen to your wants and help you build
+              a plan that will meet your desires.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="body3">
+        <div class="form">
+          <div class="formHead">DROP US A MESSAGE</div>
+          <div class="formBody">
+            <input type="text" placeholder="Name (First, Last)*" />
+            <input type="text" placeholder="Email*" />
+            <input type="text" placeholder="Phone Number*" />
+            <input type="text" placeholder="Best Time to Contact*" />
+            <input class="message" type="text" placeholder="Leave a Message" />
+            <button class="sendButton">Send</button>
+          </div>
+        </div>
+      </div>
     </div>
-    
-
-
-
-
-</body>
+  </body>
 </html>
