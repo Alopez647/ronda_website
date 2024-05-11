@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // You can perform additional validation or processing here
     
     // Example: Send an email with the form data
-    $to = "your@email.com"; // Change this to your email address
+    $to = "andy23@cox.net"; // Change this to your email address
     $subject = "New Contact Form Submission";
     $body = "Name: $name\nEmail: $email\nMessage: $message";
     
