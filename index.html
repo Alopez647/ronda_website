@@ -43,10 +43,9 @@
       .Title {
         display: flex;
         font-size: 2vw;
-        width: 25rem;
+        width: 27.5rem;
         position: absolute;
         left: 2vw;
-        word-spacing: 1.25vw;
       }
       .navButton {
         background: #d0bc78;
@@ -64,10 +63,19 @@
         background: rgb(0, 0, 0);
         color: rgb(255, 255, 255);
       }
+      .logo {
+        background-image: url(./photos/Agape\ Family\ Wellness\ logo\ .png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 20vw;
+        width: 20vw;
+        position: absolute;
+        top: 5vh;
+      }
       .heading {
         /* z-index: 1; */
         position: absolute;
-        top: 22.5%;
+        top: 30%;
         left: 5%;
         /* background: rgb(171, 171, 171); */
         height: 32.5vw;
@@ -140,23 +148,43 @@
         height: 35%;
         width: 20%;
         position: absolute;
-        right: 17.5%;
+        right: 22%;
         bottom: 5%;
       }
       .headerContact h3 {
         font-size: 1.5em;
-        margin-bottom: 0.25em;
+        margin-bottom: 0.5em;
       }
       .headerContact p {
-        margin-bottom: 0.25em;
+        margin-bottom: 1.75em;
+        font-size: 1.15em;
+      }
+      .headerContact a {
+        color: #1a202c;
+        text-decoration: none;
+      }
+      .headerContact a:hover {
+        text-decoration: underline;
       }
       .headerIcons {
-        background: blue;
+        /* background: green; */
         height: 35%;
-        width: 7.5%;
+        width: 5%;
         position: absolute;
-        right: 38.5%;
+        right: 42%;
         bottom: 5%;
+      }
+      .icon {
+        background-image: url(./assets/phone_icon.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 21%;
+        width: 52%;
+        margin: auto;
+        margin-bottom: 3em;
+      }
+      .icon2 {
+
       }
       .bodies {
         top: 85%;
@@ -165,14 +193,14 @@
       }
       .circleOne {
         position: absolute;
-        top: 3vh;
+        top: 7vh;
         left: 42.5vw;
         z-index: 1;
         margin: auto;
       }
       .circleTwo {
         position: absolute;
-        top: 159vh;
+        top: 164vh;
         left: 42.5vw;
         z-index: 1;
       }
@@ -227,7 +255,9 @@
         margin-top: 1vw;
       }
       .imageBlock {
-        background: grey;
+        background-image: url(./photos/Standing\ mirror\ smiling.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
         position: absolute;
         right: 5%;
         top: 55vh;
@@ -241,6 +271,9 @@
         color: white;
       }
       .BlockTwo {
+        background-image: url(./photos/upclose.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
         top: 68%;
         position: absolute;
       }
@@ -379,7 +412,7 @@
       <circle
         r="850"
         cx="-250"
-        cy="-200"
+        cy="-100"
         fill="black"
         stroke="#D0BC78"
         stroke-width="7.5px"
@@ -393,9 +426,9 @@
       <button class="navButton">Appointment</button>
       <button class="navButton">Contact Us</button>
     </div>
-
+    <div class="logo"></div>
     <div class="heading">
-      <div class="image">Image Goes Here</div>
+      <div class="image"></div>
       <div class="textHead">
         <p>Welcome to</p>
         <h1>Agape Family Wellness</h1>
@@ -408,11 +441,20 @@
       <button class="headButton Two">Explore</button>
       <div class="headerContact">
         <h3>Appointment</h3>
-        <p>(602) 880-3132</p>
+        <p>
+          <a href="tel://+16028803132">
+            (602) 880-3132
+          </a>
+        </p>
         <h3>Location</h3>
-        <p>640 W Maryland Ave Suite 4 Phoenix, AZ 85013</p>
+        <p>
+          <a href="https://www.google.com/maps/place/Dayspring+Maryland+Gardens+Office+Condominiums,+640+W+Maryland+Ave+STE+4,+Phoenix,+AZ+85013/@33.5314702,-112.0839296,17z/data=!3m1!4b1!4m6!3m5!1s0x872b6d324657bc8b:0xf6a0564d9f7ec7e0!8m2!3d33.5314658!4d-112.0813493!16s%2Fg%2F11gg2q4kg9?entry=ttu">640 W Maryland Ave STE 4</a>
+        </p>
       </div>
-      <div class="headerIcons"></div>
+      <div class="headerIcons">
+        <div class="icon"></div>
+        <div class="icon icon2"></div>
+      </div>
     </div>
 
     <div class="bodies">
@@ -466,8 +508,8 @@
             your medical conditions.
           </p>
         </div>
-        <div class="imageBlock">Image Goes Here</div>
-        <div class="imageBlock BlockTwo">Image Goes Here</div>
+        <div class="imageBlock"></div>
+        <div class="imageBlock BlockTwo"></div>
       </div>
 
       <svg class="bdCircle circleTwo" height="225" width="225">
